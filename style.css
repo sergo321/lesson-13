@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --seconday-font: "Cormorant Garamond", serif;
+  --primary-color: #8ea698;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font);
+}
+
+main {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  row-gap: 350px;
+}
+
+main .left .wrapper {
+  width: 82%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 100px;
+}
+
+main .left nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .left nav aside a {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: var(--seconday-font);
+  color: black;
+  text-decoration: none;
+}
+
+main .left nav aside ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  gap: 20px;
+  list-style: none;
+}
+
+main .left nav aside ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+
+
+
+main .right {
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  place-items: center;
+}
+
+main .right .top {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .right .top button {
+  width: 157px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  border: 0px;
+  background-color: black;
+}
+
+main .right .bottom {
+  display: grid;
+  place-items: center;
+}
+
+main .right .bottom img {
+  width: max-content;
+  height: max-content;
+  object-fit: contain;
+}
+
+main .left .wrapper .info {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  place-items: center;
+}
+
+main .left .wrapper .info .top h1 {
+  font-size: 85px;
+  font-weight: 500;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .top h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle {
+  width: 50%;
+  display: grid;
+  place-items: left;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+main .left .wrapper .info .middle p {
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle p span {
+  font-weight: 700;
+}
+
+main .left .wrapper .info .middle ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+main .left .wrapper .info .middle ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+main .left .wrapper .info .middle ul li span {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+main .left .wrapper .info .bottom {
+  width: 50%;
+}
+
+main .left .wrapper .info .bottom a {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* my part */
+
+
+main .left .sections {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  place-items: start;
+}
+
+
+
+main .left .sections .head-width-line {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 10px;
+}
+  
+
+main .left .sections h2{
+  font-size: 22px;
+  font-family: var(--seconday-font);
+  letter-spacing: 0.5em;
+}
+
+main .left .sections .head-width-line div {
+  width: auto;
+  height: 30px;
+  border-bottom: 1px solid black;
+}
+
+main .left #about p {
+  font-size: 16px;
+  font-family:var(--seconday-font);
+  letter-spacing: 0.2em;
+  line-height: 2em;
+}
+main .left #skills ul {
+  padding: 0px;
+}
+
+main .left #skills ul li {
+  font-size: 16px;
+  font-family:var(--primary-font);
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+
+main #experience >div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+
+main #experience >div:nth-child(2) div p,b {
+  font-family: var(--primary-font);
+}
+
+
+
+main #contact ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: start;
+  padding: 0px;
+}
+main #contact ul li {
+  list-style-type: none;
+}
+
+main #contact ul li:nth-child(2) a {
+  text-decoration: none;
+}
+
+main #contact ul li a {
+  color: black;
+}
+
+
+
+main .left >p:last-child {
+  font-size: 15px;
+  font-family: var(--seconday-font);
+}
